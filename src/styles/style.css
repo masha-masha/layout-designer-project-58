@@ -1,0 +1,29 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-weight: 700;
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-Bold.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: Neucha;
+    src: url("../assets/fonts/Neucha.woff2") format("woff2");
+  }
+body {
+ background:  #fff;
+ font: 16px/1.6em "Open Sans", sans-serif;
+}
+h1 {
+    font-size: 72px;
+}
+h2 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 34px; 
+}
