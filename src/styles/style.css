@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --color-white: #fff;
+  --color-semi-transparent-white: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-primary: #fe8a02;
+  --color-primary-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-semi-transparent-dark: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+}
+
 @font-face {
     font-weight: 400;
     font-family: "Open Sans";
@@ -14,16 +31,112 @@
     font-family: Neucha;
     src: url("../assets/fonts/Neucha.woff2") format("woff2");
   }
-body {
- background:  #fff;
- font: 16px/1.6em "Open Sans", sans-serif;
-}
-h1 {
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: var(--color-dark);
+    margin: 0 50px;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: var(--color-dark);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
     font-size: 72px;
-}
-h2 {
+  }
+  
+  h2 {
     font-size: 60px;
-}
-h3 {
-    font-size: 34px; 
-}
+  }
+  
+  h3 {
+    font-size: 34px;
+  }
+  header{
+    width: 1440px;
+    height: 914px;
+  }
+  section {
+    padding: 100px 0;
+    width: 1110px;
+    margin: 0 auto;
+  }
+
+  .header-h1 {
+    position: relative;
+    z-index: 2;
+  }
+  .text-orange {
+    color: var(--color-primary);
+  }
+  .container {
+   overflow: hidden;
+   position: relative;
+   width: 1440px;
+   height: 914px;
+   background-color: var(--color-light);
+   margin: 0 auto;
+  }
+
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+  }
+  .header-section-h1-image {
+    position: relative; 
+  }
+
+  .header-image {  
+    position: absolute; 
+    height: 525px;
+    top: 55px;
+    right: -270px;
+    vertical-align: middle;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+  }
+
+  .header-left-text {
+    margin-right: 30px;
+  }
+  
+  .header-left-text,
+  .header-right-text {
+    width: 540px; 
+  }
+
+  .btn-header {
+    display: block;
+    width: 148px;
+    margin-top: 35px;
+    padding: 12px 24px;
+  
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    background-color: var(--color-primary);
+  }
+  
